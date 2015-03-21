@@ -1,0 +1,18 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html lang="en">
+<head>
+    <title>Request Meta</title>
+</head>
+<body>
+    <h1>Request Meta</h1>
+    <ul>
+    {% for k, v in information %}
+        <li>{{ k }} = {{ v }}</li>
+    {% endfor %}
+    </ul>
+    {% block footer %}
+    <hr>
+    <p>Thanks for visiting my site.</p>
+    {% endblock %}
+</body>
+</html>
